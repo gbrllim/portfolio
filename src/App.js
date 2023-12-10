@@ -1,20 +1,16 @@
+//-----------Libraries-----------//
 import React from "react";
-import logo from "./logo.png";
-import "./App.css";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-        </header>
-      </div>
-    );
-  }
-}
+//-----------Components-----------//
+import About from "./components/About";
+
+const App = () => {
+  return (
+    <div className="flex h-screen w-full flex-col items-center justify-center">
+      <header className="bg-red-200 text-xl">gab</header>
+      <About />
+    </div>
+  );
+};
 
 export default App;
